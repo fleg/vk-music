@@ -108,7 +108,6 @@ function main() {
 			//series donwnloading albums
 			async.eachOfSeries(byAlbums, function(audios, album, callback) {
 				console.log("downloading `" + album + "` album");
-				console.log(typeof album)
 				
 				//five audios in parallel
 				//use eachOf because of index in iterator
