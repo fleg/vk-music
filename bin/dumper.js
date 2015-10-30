@@ -4,6 +4,11 @@
 
 require('dotenv').config({silent: true});
 
+if (!process.env.VK_ACCESS_TOKEN) {
+	console.error('VK_ACCESS_TOKEN is required');
+	return process.exit(1);
+}
+
 // limit parallel downloads, just in case
 var http = require('http');
 http.globalAgent.maxSockets = 5;
