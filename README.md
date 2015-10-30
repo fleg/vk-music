@@ -1,4 +1,4 @@
-# vk-music-dumper
+# vk-music
 Simple music dumper from vk.com written on js
 
 #Some info
