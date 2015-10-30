@@ -1,31 +1,37 @@
 {
-  "name": "vk-music-dumper",
+  "name": "vk-music",
   "version": "1.0.0",
-  "description": "simple vk music dumper",
-  "main": "vk-music-dumper.js",
+  "description": "vk music utils",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "dumper": "./bin/dumper.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fleg/vk-music-dumper.git"
+    "url": "git+https://github.com/fleg/vk-music.git"
   },
   "keywords": [
     "vk",
     "music",
-    "dumper"
+    "utils"
   ],
-  "author": "Aleksey Timchenko <flegmatik.bel@gmail.com> (http://flegdev.ru/)",
+  "author": "Aleksey Timchenko <flegmatik.bel@gmail.com> (https://flegdev.ru/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fleg/vk-music-dumper/issues"
+    "url": "https://github.com/fleg/vk-music/issues"
   },
-  "homepage": "https://github.com/fleg/vk-music-dumper#readme",
+  "homepage": "https://github.com/fleg/vk-music#readme",
   "dependencies": {
+    "dotenv": "^1.2.0",
     "mkdirp": "^0.5.1",
+    "multi-progress": "^1.0.0",
+    "multipipe": "^0.2.1",
     "request": "^2.60.0",
     "sanitize-filename": "^1.4.1",
     "twostep": "^0.4.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "yargs": "^3.29.0"
   }
 }

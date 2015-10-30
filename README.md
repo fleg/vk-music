@@ -1,10 +1,15 @@
 # vk-music
-Simple music dumper from vk.com written on js
+Helpful utilities for vk music
 
-#Some info
-* brace yourself, winter is coming, we must protect our music
-* create your own vk app, or use mine `4875633`
-* use this link `https://oauth.vk.com/authorize?client_id={VK_APP_ID}&scope=audio&redirect_uri=http://oauth.vk.com/blank.html&display=page&response_type=token` to get access token
-* run `$ VK_USER_ID="" VK_ACCESS_TOKEN="" node vk-music-dumper.js "./audios"`
+## Access token
+* to get access token use this [link](https://oauth.vk.com/authorize?client_id=4875633&scope=audio&redirect_uri=http://oauth.vk.com/blank.html&display=page&response_type=token)
+* copy `access_token` parameter and pass it through `VK_ACCESS_TOKEN` env variable, you can also save it in `.env` file
 
+# utilities
+## dumper
+Dump all music from user
+Usage: `dumper --owner=12345678 --dest=./`
 
+# TODO
+* utility for saving albums from other users
+* utility for put down album in list
