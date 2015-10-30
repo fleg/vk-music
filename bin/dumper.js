@@ -2,7 +2,7 @@
 
 'use strict';
 
-require('dotenv').config();
+require('dotenv').config({silent: true});
 
 // limit parallel downloads, just in case
 var http = require('http');
