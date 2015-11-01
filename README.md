@@ -7,11 +7,11 @@ Helpful utilities for vk music
 
 # utilities
 ## dumper
-Dump all music from user
+Dump all music from user  
 Usage: `dumper --owner=12345678 --dest=./`
 
 ## copy-album
-Copy whole album from another user
+Copy whole album from another user  
 Usage: `copy-album --owner=12345678 --id=87654321`
 
 # TODO
