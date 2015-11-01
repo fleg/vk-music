@@ -11,5 +11,6 @@ Dump all music from user
 Usage: `dumper --owner=12345678 --dest=./`
 
 # TODO
+* fucking captcha errors, maybe nw app?
 * utility for saving albums from other users
 * utility for put down album in list
