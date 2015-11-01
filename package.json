@@ -29,6 +29,7 @@
     "mkdirp": "^0.5.1",
     "multi-progress": "^1.0.0",
     "multipipe": "^0.2.1",
+    "prompt": "^0.2.14",
     "request": "^2.60.0",
     "sanitize-filename": "^1.4.1",
     "twostep": "^0.4.1",

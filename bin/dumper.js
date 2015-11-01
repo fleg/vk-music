@@ -31,7 +31,7 @@ var argv = require('yargs')
     .argv;
 
 Steppy(
-	function getAudiosAndAlbums() {
+	function() {
 		api('audio.get', {
 			owner_id: argv.owner,
 			need_user: 0,
@@ -44,7 +44,7 @@ Steppy(
 			count: 100
 		}, this.slot());
 	},
-	function transform(err, audios, albums) {
+	function(err, audios, albums) {
 		audios = audios.items;
 		albums = albums.items;
 
@@ -66,13 +66,13 @@ Steppy(
 
 		this.pass(byAlbums);
 	},
-	function download(err, byAlbums) {
+	function(err, byAlbums) {
 		var multi = new MultiProgress();
 
 		//series donwnloading albums
 		async.eachOfSeries(byAlbums, function(audios, album, callback) {
 			console.log('');
-			console.log('downloading `' + album + '` album');
+			console.log('downloading `%s` album', album);
 
 			//five audios in parallel
 			//use eachOf because of index in iterator
@@ -114,7 +114,9 @@ Steppy(
 	function(err) {
 		if (err) {
 			console.error(err.stack || err);
-			process.exit(1);
+			return process.exit(1);
 		}
+
+		console.log('complete!');
 	}
 );
