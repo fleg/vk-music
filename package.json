@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "dumper": "./bin/dumper.js"
+    "dumper": "./bin/dumper.js",
+    "copy-album": "./bin/copy-album.js"
   },
   "repository": {
     "type": "git",
