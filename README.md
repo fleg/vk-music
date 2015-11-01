@@ -10,7 +10,11 @@ Helpful utilities for vk music
 Dump all music from user
 Usage: `dumper --owner=12345678 --dest=./`
 
+## copy-album
+Copy whole album from another user
+Usage: `copy-album --owner=12345678 --id=87654321`
+
 # TODO
 * fucking captcha errors, maybe nw app?
-* utility for saving albums from other users
+* ~~utility for saving albums from other users~~
 * utility for put down album in list
