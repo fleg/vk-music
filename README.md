@@ -1,4 +1,6 @@
 # vk-music
+[![NPM Version](https://img.shields.io/npm/v/vk-music.svg)](https://www.npmjs.com/package/vk-music)
+
 Helpful utilities for vk music
 
 ## Access token
